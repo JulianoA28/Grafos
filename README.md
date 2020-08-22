@@ -1,5 +1,5 @@
 # Grafos
-## Trabalho Prático de Algoritmo em Grafos (GCC218)
+## Trabalho Prático de Algoritmos em Grafos (GCC218)
 
 O repositório consiste de 2 pastas cada uma com um tipo de conteúdo:  
 A primeira contém somente um único arquivo (principal.py) que por sua vez possui todas as estruturas de dados, funções, o algoritmo de Gale-Shapley e as entradas e saídas.  
