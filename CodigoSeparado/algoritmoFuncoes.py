@@ -48,6 +48,11 @@ def organizarClasses(pos, n):
         else:
             pos += 1
         cont += 1
+        
+# Funcao para restaurar todos os valores do dicionario matchClasses2 para False e assim executar novos exemplos
+def restaurar():
+    for chave in matchClasses2:
+        matchClasses2[chave] = False
 
 # Algoritmo de Gale-Shapley
 def GaleShapley():
@@ -106,6 +111,9 @@ while N <= 0 or N > 16:
 listaJogadores = []
 for i in range(N):
     listaJogadores.append(input())
+    
+# Chamada da funcao
+restaurar()
 
 # Uma posicao aleatoria gerada para ser passada a funcao 'organizarClasses'
 pos = random.randrange(1, 16)

@@ -53,31 +53,6 @@ matchClasses2 = {
 listaRacas = ['humano', 'anao', 'dahllan', 'elfo', 'goblin', 'lefou', 'minotauro', 'qareen', 'golem', 'hynne', 
               'kliren', 'medusa', 'osteon', 'tritao', 'silfide', 'suraggel', 'trog']
 
-'''
-Dicionario = se a raca possui um match
-Lista com o nome das racas
-Preferencias de cada raca
-'''
-matchRacas = {
-'humano': {'bruxo' : False, 'mago' : False, 'feiticeiro' : False, 'barbaro' : False, 'bardo' : False, 'bucaneiro' : False, 'cacador' : False, 'cavaleiro' : False, 'clerigo' : False, 'druida' : False, 'guerreiro' : False, 'inventor' : False, 'ladino' : False, 'lutador' : False, 'nobre' : False, 'paladino': False},
-'anao': {'clerigo' : False, 'barbaro' : False, 'druida' : False, 'cacador' : False, 'guerreiro' : False, 'lutador' : False, 'paladino' : False, 'cavaleiro' : False, 'inventor' : False, 'ladino' : False, 'bruxo' : False, 'mago' : False, 'feiticeiro' : False, 'bardo' : False, 'bucaneiro' : False, 'nobre': False},
-'dahllan': {'druida' : False, 'cacador' : False, 'clerigo' : False, 'ladino' : False, 'bucaneiro' : False, 'bardo' : False, 'lutador' : False, 'barbaro' : False, 'guerreiro' : False, 'paladino' : False, 'inventor' : False, 'mago' : False, 'feiticeiro' : False, 'bruxo' : False, 'cavaleiro' : False, 'nobre': False},
-'elfo': {'mago' : False, 'bruxo' : False, 'inventor' : False, 'ladino' : False, 'bardo' : False, 'cacador' : False, 'bucaneiro' : False, 'cavaleiro' : False, 'guerreiro' : False, 'feiticeiro' : False, 'nobre' : False, 'paladino' : False, 'clerigo' : False, 'druida' : False, 'lutador' : False, 'barbaro' : False},
-'goblin': {'ladino' : False, 'inventor' : False, 'cacador' : False, 'bruxo' : False, 'mago' : False, 'bucaneiro' : False, 'bardo' : False, 'druida' : False, 'guerreiro' : False, 'lutador' : False, 'barbaro' : False, 'cavaleiro' : False, 'clerigo' : False, 'paladino' : False, 'nobre' : False, 'feiticeiro' : False},
-'lefou': {'bruxo' : False, 'mago' : False, 'barbaro' : False, 'cacador' : False, 'cavaleiro' : False, 'clerigo' : False, 'druida' : False, 'guerreiro' : False, 'inventor' : False, 'ladino' : False, 'lutador' : False, 'bucaneiro' : False, 'nobre' : False, 'paladino' : False, 'feiticeiro' : False, 'bardo' : False},
-'minotauro' : {'barbaro' : False, 'guerreiro' : False, 'lutador' : False, 'cavaleiro' : False, 'paladino' : False, 'clerigo' : False, 'druida' : False, 'ladino' : False, 'cacador' : False, 'bardo' : False, 'bucaneiro' : False, 'bruxo' : False, 'mago' : False, 'inventor' : False, 'feiticeiro' : False, 'nobre' : False},
-'qareen' : {'bardo' : False, 'feiticeiro' : False, 'bruxo' : False, 'mago' : False, 'bucaneiro' : False, 'nobre' : False, 'paladino' : False, 'inventor' : False, 'clerigo' : False, 'ladino' : False, 'cacador' : False, 'druida' : False, 'barbaro' : False, 'guerreiro' : False, 'lutador' : False, 'cavaleiro' : False},
-'golem' : {'barbaro' : False, 'guerreiro' : False, 'lutador' : False, 'cavaleiro' : False, 'paladino' : False, 'druida' : False, 'clerigo' : False, 'cacador' : False, 'ladino' : False, 'bucaneiro' : False, 'inventor' : False, 'bruxo' : False, 'mago' : False, 'feiticeiro' : False, 'nobre' : False, 'bardo' : False},
-'hynne' : {'bucaneiro' : False, 'bardo' : False, 'ladino' : False, 'feiticeiro' : False, 'nobre' : False, 'cacador' : False, 'paladino' : False, 'druida' : False, 'clerigo' : False, 'mago' : False, 'bruxo' : False, 'inventor' : False, 'cavaleiro' : False, 'guerreiro' : False, 'barbaro' : False, 'lutador' : False},
-'kliren' : {'inventor' : False, 'mago' : False, 'bruxo' : False, 'feiticeiro' : False, 'nobre' : False, 'bardo' : False, 'paladino' : False, 'bucaneiro' : False, 'ladino' : False, 'clerigo' : False, 'druida' : False, 'cacador' : False, 'cavaleiro' : False, 'guerreiro' : False, 'barbaro' : False, 'lutador' : False},
-'medusa' : {'bucaneiro' : False, 'bardo' : False, 'feiticeiro' : False, 'nobre' : False, 'ladino' : False, 'cacador' : False, 'paladino' : False, 'clerigo' : False, 'bruxo' : False, 'mago' : False, 'inventor' : False, 'druida' : False, 'guerreiro' : False, 'barbaro' : False, 'lutador' : False, 'cavaleiro' : False},
-'osteon' : {'bruxo' : False, 'mago' : False, 'feiticeiro' : False, 'bardo' : False, 'bucaneiro' : False, 'cacador' : False, 'clerigo' : False, 'druida' : False, 'inventor' : False, 'ladino' : False, 'nobre' : False, 'paladino' : False, 'cavaleiro' : False, 'guerreiro' : False, 'lutador' : False, 'barbaro' : False},
-'tritao' : {'bruxo' : False, 'mago' : False, 'feiticeiro' : False, 'barbaro' : False, 'bardo' : False, 'bucaneiro' : False, 'cacador' : False, 'cavaleiro' : False, 'clerigo' : False, 'druida' : False, 'guerreiro' : False, 'inventor' : False, 'ladino' : False, 'lutador' : False, 'nobre' : False, 'paladino' : False},
-'silfide' : {'bardo' : False, 'feiticeiro' : False, 'nobre' : False, 'bucaneiro' : False, 'paladino' : False, 'ladino' : False, 'cacador' : False, 'druida' : False, 'bruxo' : False, 'mago' : False, 'inventor' : False, 'clerigo' : False, 'guerreiro' : False, 'cavaleiro' : False, 'lutador' : False, 'barbaro' : False},
-'suraggel' : {'clerigo' : False, 'druida' : False, 'cacador' : False, 'ladino' : False, 'bardo' : False, 'bucaneiro' : False, 'feiticeiro' : False, 'nobre' : False, 'paladino' : False, 'bruxo' : False, 'mago' : False, 'inventor' : False, 'guerreiro' : False, 'cavaleiro' : False, 'lutador' : False, 'barbaro' : False},
-'trog' : {'barbaro' : False, 'guerreiro' : False, 'lutador' : False, 'cavaleiro' : False, 'paladino' : False, 'druida' : False, 'clerigo' : False, 'cacador' : False, 'ladino' : False, 'bucaneiro' : False, 'feiticeiro' : False, 'nobre' : False, 'bardo' : False, 'inventor' : False, 'bruxo' : False, 'mago' : False}
-}
-
 # Listas de preferencia de cada raca
 Humano = ['bruxo', 'mago', 'feiticeiro', 'barbaro', 'bardo', 'bucaneiro', 'cacador', 'cavaleiro', 'clerigo', 'druida', 'guerreiro', 'inventor', 'ladino', 'lutador', 'nobre', 'paladino'] 
 Anao = ['clerigo', 'barbaro', 'druida', 'cacador', 'guerreiro', 'lutador', 'paladino', 'cavaleiro', 'inventor', 'ladino', 'bruxo', 'mago', 'feiticeiro', 'bardo', 'bucaneiro', 'nobre']

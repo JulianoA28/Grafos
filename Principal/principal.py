@@ -162,6 +162,12 @@ def unmatched(match, matchBool):
                 
     return False
 
+# Funcao para restaurar todos os valores do dicionario matchClasses2 para False e assim executar novos exemplos
+# E utilizada pois as vezes, o matchClasses2 nao e restaurado corretamente
+def restaurar():
+    for chave in matchClasses2:
+        matchClasses2[chave] = False
+
 # Algoritmo de Gale-Shapley
 def GaleShapley():
     
@@ -206,14 +212,14 @@ def GaleShapley():
         
     return M
 
-# Funcao que ira organizar o dicionario matchClasses2 para se adaptar a quantidade de jogadores
-# Seu funcionamento consiste em transformar em True o match de algumas classes em matchClasses2,
-# a partir de uma posicao gerada aleatoriamente ate se ter uma quantidade N de classes disponivels
-# N == quantidade de jogadores
-def organizarClasses(pos, N):
+''' Funcao que ira organizar o dicionario matchClasses2 para se adaptar a quantidade de jogadores
+    Ela recebera uma posicao aleatoria (pos) e (16 - N). Com isso a funcao ira transformar em True as 'n' posicoes
+    seguintes. Por conta disso, so sobrarao 'N' classes sem match e o algoritmo so utilizara essa quantidade.
+'''
+def organizarClasses(pos, n):
     cont = 0
     
-    while cont != N:
+    while cont != n:
         matchClasses2[listaClasses[pos]] = True
         if (pos+1) == len(listaClasses):
             pos = 0
@@ -236,6 +242,9 @@ listaJogadores = []
 for i in range(N):
     # Entrada com o nome de N jogadores
     listaJogadores.append(input())
+    
+# Chamada da funcao
+restaurar()
 
 # Uma posicao aleatoria gerada para ser passada a funcao 'organizarClasses'
 pos = random.randrange(1, 16)
@@ -258,6 +267,6 @@ while contador < N:
 # Impressao das informacoes de cada jogador
 for i in range(len(Match)):
     print('===============================================================')
-    print('Nome do Personagem:', listaNomes[i], '- Jogador:', listaJogadores[i]) 
+    print('Nome do Personagem:', listaNomes[i], '- Jogador:', listaJogadores[i])
     print('Raca:', Match[i][1], '- Classe:', Match[i][0])
 print('===============================================================')
